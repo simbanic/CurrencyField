@@ -18,7 +18,12 @@ export default function Home() {
         </Box>
         <Box sx={{ padding: 1 }}>
           <Link href={"/web-component"}>
-            React Hook Form Register with MUI TextField + Web Component Example{" "}
+            React Hook Form Register with MUI TextField + Web Component Example 
+          </Link>
+        </Box>
+        <Box sx={{ padding: 1 }}>
+          <Link href={"/number-format"}>
+            React Hook Form Register with Number Formate  
           </Link>
         </Box>
       </Box>
