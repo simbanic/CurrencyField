@@ -3,20 +3,18 @@ import { NumericFormat } from "react-number-format";
 
 type NumericFieldProps = {
   label: string;
-  registerOptions: {
-    onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
-    name: string;
-  };
+  onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
+  name: string;
   value: string | number;
-  handleChange: (name:string,value:string) => void;
+  handleChange: (name: string, value: string) => void;
   allowedFractions?: boolean;
   maxFractionsDigits?: number;
   error?: string;
 };
 
 const NumericField = ({
-  /** do not bind onChange of register with NumericFormate as it can receive only formatted value */
-  registerOptions: { onBlur, name },
+  onBlur,
+  name,
   label,
   handleChange,
   value,

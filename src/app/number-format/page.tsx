@@ -78,7 +78,7 @@ const NumberFormatInput = () => {
         <Box sx={{ padding: 2 }}>
           <NumericField
             label="price 1"
-            registerOptions={register("price1", {
+            {...register("price1", {
               required: "This field is required",
             })}
             value={formValues.price1}
@@ -90,7 +90,7 @@ const NumberFormatInput = () => {
           <h2> React Number formatter with Register handle Bouncing </h2>
           <NumericField
             label="price 2"
-            registerOptions={register("price2")}
+            {...register("price2")}
             value={formValues.price2}
             handleChange={onValueChangePrice2}
           />
